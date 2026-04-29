@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, Verdana,  sans-serif; /* keluarga font */
+    font-size: 11pt; /* Ukuran font utama di <p></p>  */
+    background-color: #1c566bf3; /* Warna latar belakang laman web */
+    color: #adbbbaa4; /* Warna teks */ 
+}
+h1 {
+    color: #7bc0a3; /* Warna tajuk */
+    font-size: 24pt; /* Ukuran font tajuk */
+    font-family: Georgia, Times, serif; /* Keluarga font yang digunakan di tajuk (header) */
+    border-bottom: 2px solid rgb(245, 219, 255);
+    padding-bottom: 2px;
+    text-align: center; /* Menyelaraskan tajuk ke tengah */
+}
+h2 {
+    color: #00aeff; /* Warna tajuk */
+    font-size: 24pt; /* Ukuran font tajuk */
+    font-family: Georgia, Times, serif; /* Keluarga font yang digunakan di tajuk (header) */
+    text-decoration-line: underline;
+    text-decoration-color: rgb(230, 137, 137);
+    
+}
+/* img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+@keyframes color-change {
+    0% {
+      color: rgb(197, 144, 144);
+    }
+  
+    50% {
+      color: rgb(172, 90, 90);
+    }
+  
+    100% {
+      color: rgb(149, 140, 228);
+    }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); color: #00aeff; text-shadow: none; }
+  50% { transform: scale(1.05); color: #ff6b6b; text-shadow: 0 0 8px rgba(250, 157, 157, 0.8); }
+  100% { transform: scale(1); color: #00aeff; text-shadow: none; }
+}
+
+h2:hover {
+  transform-origin: center;
+  animation: pulse 800ms ease-in-out infinite;
+}
+
+p:hover { animation: color-change 100000s infinite;}
+/* p:hover { animation: color-change 3000s infinite;} */
